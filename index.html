@@ -52,13 +52,6 @@
         function init(){
             rootPath = "http://mysite.itvarsity.org/api/mini-blog/";
 
-            function getAllPosts(){
-            category = "getAll";
-
-            fetchPosts(category);
-            setActiveLink(category);
-        }
-
             document.getElementById("getAll").addEventListener("click", getAllPosts);
             document.getElementById("getPopular").addEventListener("click", getPopularPosts);
             document.getElementById("getLatest").addEventListener("click", getLatestPosts);
